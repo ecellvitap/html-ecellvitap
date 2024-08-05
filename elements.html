@@ -1,419 +1,283 @@
 <!DOCTYPE HTML>
-
 <html>
-	<head>
-		<title>Club Members</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		
-		<!-- Separate Style Sections -->
-		<style>
-			#sidebar {
-				height: auto;
-				margin: auto;
-				align-items: auto;
-				
-			}
-			#wrapper {
-				/* Your custom styles for #wrapper */
-			}
-			#intro {
-			}
-			#one {
-				/* Your custom styles for #one */
-			}
-			#two {
-				/* Your custom styles for #two */
-			}
-			#three {
-				border: none;
-			}
-			#footer {
-				/* Your custom styles for #footer */
-			}
-			#Options{
-				font-weight: 900;
-			}
-			#logo{
-				height: 180px;
-				width: 180px;
-				border-radius: 50px;
-				background-size: cover;
-				margin: 0px;
-				border-radius:50px;
-				display: inline-block;
-				margin-top: 10px;
-				align-self: auto;
-				/* position: sticky;
-				z-index: 1; */
-			}
-				.split {
-					border: none; /* Remove border */
-				}
-	</style>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>Club Members</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Header -->
-			<header id="header">
-				<div id="logo">
-					<img src="https://i.ibb.co/fHwh10y/Logo.jpg" alt="Logo" style="border-radius: 50px; width: 100%; height: 100%; object-fit: cover;">
-				</div>
-	
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html">About</a></li>
-						<li><a href="elements.html"  class="active">Past</a></li>
-					</ul>
-				</nav>
-			</header>
+    <!-- Separate Style Sections -->
+    <style>
+        #sidebar {
+            height: auto;
+            margin: auto;
+            align-items: auto;
+        }
+        #wrapper {
+            /* Your custom styles for #wrapper */
+        }
+        #intro {
+        }
+        #one {
+            /* Your custom styles for #one */
+        }
+        #two {
+            /* Your custom styles for #two */
+        }
+        #three {
+            border: none;
+        }
+        #footer {
+            /* Your custom styles for #footer */
+        }
+        #Options {
+            font-weight: 900;
+        }
+        #logo {
+            top: auto;
+            bottom: auto;
+            height: 110px;
+            width: 110px;
+            border-radius: 100%;
+            background-size: auto;
+            margin: 0px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: -15px;
+            margin-bottom: -100%;
+            align-self: first baseline;
+        }
+        .split {
+            border: none; /* Remove border */
+        }
+        .tree-container {
+            text-align: center;
+            background-color: transparent; /* Transparent background */
+            padding: 2em 0;
+        }
+        .tree {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: transparent; /* Transparent background for the tree */
+            font-size: 60%; /* Set default size to minimum */
+        }
+        .tree ul {
+            position: relative;
+            padding: 1em 0;
+            white-space: nowrap;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .tree ul::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .tree li {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 1em .5em 0 .5em;
+        }
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            border-top: 1px solid #ccc;
+            width: 50%;
+            height: 1em;
+        }
+        .tree li::after {
+            right: auto;
+            left: 50%;
+            border-left: 1px solid #ccc;
+        }
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+        .tree li:only-child {
+            padding-top: 0;
+        }
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+        .tree li:last-child::before {
+            border-right: 1px solid #ccc;
+        }
+        .tree li:first-child::after {
+            border-radius: 0 5px 0 0;
+        }
+        .tree li:last-child::before {
+            border-radius: 5px 0 0 0;
+        }
+        .tree ul ul::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            border-left: 1px solid #ccc;
+            width: 0;
+            height: 1em;
+        }
+        .tree li a {
+            border: 1px solid #ccc;
+            padding: .5em 1em;
+            text-decoration: none;
+            color: #666;
+            background-color: white;
+            display: inline-block;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .tree li a:hover {
+            border-color: #999;
+            color: #000;
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Header -->
+    <header id="header">
+        <div id="logo">
+            <img src="https://i.ibb.co/fHwh10y/Logo.jpg" alt="Logo" style="border-radius: 50px; width: 100%; height: 100%; object-fit: cover;">
+        </div>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Elements</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic.html">About</a></li>
+                <li><a href="elements.html" class="active">Hierarchy</a></li>
+            </ul>
+        </nav>
+    </header>
 
-							<!-- Text -->
-								<section>
-									<h2>Text</h2>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<hr />
-									<h3>Blockquote</h3>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h3>Preformatted</h3>
-									<pre><code>i = 0;
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">Hierarchy</h1>
+                
+<!-- Tree Section -->
+<div class="tree-container">
+	<div id="tree" class="tree">
+		<ul>
+			<li>
+				<a href="#">President<br>Ayus Pathak</a>
+				<ul>
+					<li>
+						<a href="#">Vice Presidents<br>Pranay Rajesh & Ojaswi Gupta</a>
+						<ul>
+							<li>
+								<a href="#">Secretary<br>Rahul Sharma</a>
+								<ul>
+									<li>
+										<a href="#">Marketing<br>Lead: Abhinav Pentani</a>
+										<ul>
+											<li>
+												<a href="#">Co Lead<br>Vivek Changela</a>
+											</li>
+											<li>
+												<a href="#">Members<br>Ashika Sunil</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Technical<br>Lead: Surya Pratik</a>
+										<ul>
+											<li>
+												<a href="#">Members<br>Tamesh Bhave</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Research<br>Lead: Amey Rasekar</a>
+										<ul>
+											<li>
+												<a href="#">Co Lead<br>Anshi Diwedi</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Creative<br>Lead: Ayush Choudhary</a>
+										<ul>
+											<li>
+												<a href="#">Co Lead<br>Ishika Barnwal<br>Hetvi Pujara</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Event Management<br>Lead: Aryan Kumar</a>
+										<ul>
+											<li>
+												<a href="#">Co Lead<br>Ashlesh L. Gujjar<br>Tanishqa Rana</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">PR and Outreach<br>Lead: Saifuddin Shaik</a>
+										<ul>
+											<li>
+												<a href="#">Co Lead<br>Arushi Mishra</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Finance<br>Treasurer: Ayush Singh</a>
+									</li>
+									<li>
+										<a href="#">Documentation<br>Lead: Subhrojyoti Sarkar</a>
+										<ul>
+											<li>
+												<a href="#">Co Lead<br>Utsav Kumar Singh</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+    <!-- Footer -->
+    <footer id="footer" class="wrapper style1-alt">
+        <div class="inner" style="text-align: center;">
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td>&copy; 2024 Entrepreneurship Club. All rights reserved.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul id="icons" class="icons" style="display: inline-flex; list-style: none; padding: 0;">
+                            <li style="margin: 0 10px;"><a href="https://www.instagram.com/ecell_vitap?utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li style="margin: 0 10px;"><a href="https://www.linkedin.com/company/entrepreneurship-club-vit-ap" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                            <li style="margin: 0 10px;"><a href="mailto:entrepreneurship.club@vitap.ac.in" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </footer>
 
-							<!-- Lists -->
-								<section>
-									<h2>Lists</h2>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<h3>Unordered</h3>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-											<h3>Alternate</h3>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis adipiscing.</li>
-												<li>Felis enim feugiat.</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<h3>Ordered</h3>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis viverra.</li>
-												<li>Felis enim feugiat.</li>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis lorem.</li>
-												<li>Felis enim et feugiat.</li>
-											</ol>
-											<h3>Icons</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-											</ul>
-										</div>
-									</div>
-									<h2>Actions</h2>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<ul class="actions">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions small">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-medium">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small fit">Small</a></li>
-												<li><a href="#" class="button small fit">Small</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-							<!-- Table -->
-								<section>
-									<h2>Table</h2>
-									<h3>Default</h3>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h3>Alternate</h3>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-							<!-- Buttons -->
-								<section>
-									<h3>Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions fit">
-										<li><a href="#" class="button primary fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-									<ul class="actions fit small">
-										<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-upload">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-save">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-							<!-- Form -->
-								<section>
-									<h2>Form</h2>
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</section>
-
-							<!-- Image -->
-								<section>
-									<h2>Image</h2>
-									<h3>Fit</h3>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-										</div>
-									</div>
-									<h3>Left &amp; Right</h3>
-									<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-									<p><span class="image right"><img src="images/pic06.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-								</section>
-
-						</div>
-					</section>
-
-			</div>
-
-<!-- Footer -->
-<footer id="footer" class="wrapper style1-alt">
-    <div class="inner" style="text-align: center;">
-        <table style="margin: 0 auto;">
-            <tr>
-                <td>&copy;  2024 Entrepreneurship Club. All rights reserved.</td>
-            </tr>
-            <tr>
-                <td>
-                    <ul id="icons" class="icons" style="display: inline-flex; list-style: none; padding: 0;">
-                        <li style="margin: 0 10px;"><a href="https://www.instagram.com/ecell_vitap?utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li style="margin: 0 10px;"><a href="https://www.linkedin.com/company/entrepreneurship-club-vit-ap" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                        <li style="margin: 0 10px;"><a href="mailto:entrepreneurship.club@vitap.ac.in" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                    </ul> 
-                </td>
-            </tr>
-        </table>
     </div>
-</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
