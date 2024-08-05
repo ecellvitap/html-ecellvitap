@@ -12,7 +12,7 @@
 		#sidebar {
 			height: auto;
 			margin: auto;
-			align-items: autoss;
+			align-items: auto;
 			
 		}
 		#wrapper {
@@ -27,7 +27,7 @@
 			/* Your custom styles for #two */
 		}
 		#three {
-			/* Your custom styles for #three */
+			border: none;
 		}
 		#footer {
 			/* Your custom styles for #footer */
@@ -36,11 +36,11 @@
 			font-weight: 900;
 		}
 		#logo{
-			height: 200px;
-			width: 200px;
-			background-image: url("Logo.jpg");
+			height: 180px;
+			width: 180px;
+			border-radius: 50px;
 			background-size: cover;
-			margin: 50px;
+			margin: 0px;
 			border-radius:50px;
 			display: inline-block;
 			margin-top: 10px;
@@ -48,7 +48,10 @@
 			/* position: sticky;
 			z-index: 1; */
 		}
-	</style>
+			.split {
+				border: none; /* Remove border */
+			}
+</style>
 </head>
 <body class="is-preload">
 	<!-- <img src="Logo.jpg" alt="" data-position="center center" /> -->
@@ -57,6 +60,7 @@
 		<div class="inner">
 			<nav>
 				<div id="logo">
+					<img src="https://i.ibb.co/fHwh10y/Logo.jpg" alt="Logo" style="border-radius: 50px; width: 100%; height: 100%; object-fit: cover;">
 				</div>
 				<ul id="Options">
 					<li><a href="#intro">Home</a></li>
@@ -75,7 +79,7 @@
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
 				<h1>Entrepreneurship Club</h1>
-				<p>WELCOME we are the one's who ought to create a wave of entrepreneurship at VIT. Lets hope we reach great heights and To cultivate the qualities of a successful entrepreneur, focus on learning and embodying traits!!!!
+				<p>Welcome! We are the ones who ought to create a wave of entrepreneurship at VIT. Together, we strive to reach remarkable heights by focusing on continuous learning and embodying the essential traits of successful entrepreneurs.
  				</p>
 				<ul class="actions">
 					<li><a href="#one" class="button scrolly">What's New?</a></li>
@@ -171,7 +175,7 @@
 			<div class="inner">
 				<h2>Contact Us</h2>
 				<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-				<div class="split style1">
+				<div class="style1">
 					<section>
 						<form method="post" action="#">
 							<ul class="contact">
@@ -232,4 +236,3 @@
 
 </body>
 </html>
- 
