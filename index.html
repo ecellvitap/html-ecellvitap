@@ -1,217 +1,224 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>ECELL</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	
-	<!-- Separate Style Sections -->
-	<style>
-		#sidebar {
-			height: auto;
-			margin: auto;
-			align-items: auto;
-			
-		}
-		#wrapper {
-			/* Your custom styles for #wrapper */
-		}
-		#intro {
-		}
-		#one {
-			/* Your custom styles for #one */
-		}
-		#two {
-			/* Your custom styles for #two */
-		}
-		#three {
-			border: none;
-		}
-		#footer {
-			/* Your custom styles for #footer */
-		}
-		#Options{
-			font-weight: 900;
-		}
-		#logo{
-			height: 180px;
-			width: 180px;
-			border-radius: 50px;
-			background-size: cover;
-			margin: 0px;
-			border-radius:50px;
-			display: inline-block;
-			margin-top: 10px;
-			align-self: auto;
-			/* position: sticky;
-			z-index: 1; */
-		}
-			.split {
-				border: none; /* Remove border */
-			}
-</style>
+    <title>ECELL</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    
+    <!-- Separate Style Sections -->
+    <style>
+        #sidebar {
+            height: auto;
+            margin: auto;
+            align-items: auto;
+        }
+        #wrapper {
+            /* Your custom styles for #wrapper */
+        }
+        #intro {
+        }
+        #one {
+            /* Your custom styles for #one */
+        }
+        #two {
+            /* Your custom styles for #two */
+        }
+        #three {
+            border: none;
+        }
+        #footer {
+            /* Your custom styles for #footer */
+        }
+        #Options {
+            font-weight: 900;
+        }
+        #logo {
+            height: 180px;
+            width: 180px;
+            border-radius: 50px;
+            background-size: cover;
+            margin: 0px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .split {
+            border: none; /* Remove border */
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            #intro h1 {
+                font-size: 2.5em;
+            }
+            #intro p {
+                font-size: 1.2em;
+            }
+            #sidebar {
+                width: 100%;
+                margin: 0 auto;
+            }
+			#logo {
+                height: 150px;
+                width: 150px;
+            }
+        }
+        @media (max-width: 768px) {
+            #intro h1 {
+                font-size: 2em;
+            }
+            #intro p {
+                font-size: 1em;
+            }
+            #sidebar {
+                width: 100%;
+                margin: 0 auto;
+            }
+            #logo {
+                height: 150px;
+                width: 150px;
+            }
+            #Options li {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            #intro h1 {
+                font-size: 1.5em;
+            }
+            #intro p {
+                font-size: 0.9em;
+            }
+            #logo {
+                height: 120px;
+                width: 120px;
+            }
+			#sidebar {
+                width: 100%;
+                margin: 0 auto;
+            }
+            #Options li {
+                font-size: 0.9em;
+            }
+        }
+		
+    </style>
 </head>
 <body class="is-preload">
-	<!-- <img src="Logo.jpg" alt="" data-position="center center" /> -->
-	<!-- Sidebar -->
-	<section id="sidebar">
-		<div class="inner">
-			<nav>
-				<div id="logo">
-					<img src="https://i.ibb.co/fHwh10y/Logo.jpg" alt="Logo" style="border-radius: 50px; width: 100%; height: 100%; object-fit: cover;">
-				</div>
-				<ul id="Options">
-					<li><a href="#intro">Home</a></li>
-					<li><a href="#one">About Us</a></li>
-					<li><a href="#two">Upcoming Events</a></li>
-					<li><a href="#three">Contact Us</a></li>
-				</ul>
-			</nav>
-		</div>
-	</section>
+    <!-- Sidebar -->
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <div id="logo">
+                    <img src="https://i.ibb.co/fHwh10y/Logo.jpg" alt="Logo" style="border-radius: 50px; width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <ul id="Options">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#one">About Us</a></li>
+                    <li><a href="#two">Upcoming Events</a></li>
+                    <li><a href="#three">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Intro -->
+        <section id="intro" class="wrapper style1 fullscreen fade-up">
+            <div class="inner">
+                <h1>Entrepreneurship Club</h1>
+                <p>Welcome! We are the ones who ought to create a wave of entrepreneurship at VIT. Together, we strive to reach remarkable heights by focusing on continuous learning and embodying the essential traits of successful entrepreneurs.</p>
+                <ul class="actions">
+                    <li><a href="#one" class="button scrolly">What's New?</a></li>
+                </ul>
+            </div>
+        </section>
 
-		<!-- Intro -->
-		<section id="intro" class="wrapper style1 fullscreen fade-up">
-			<div class="inner">
-				<h1>Entrepreneurship Club</h1>
-				<p>Welcome! We are the ones who ought to create a wave of entrepreneurship at VIT. Together, we strive to reach remarkable heights by focusing on continuous learning and embodying the essential traits of successful entrepreneurs.
- 				</p>
-				<ul class="actions">
-					<li><a href="#one" class="button scrolly">What's New?</a></li>
-				</ul>
-			</div>
-		</section>
+        <!-- One -->
+        <section id="one" class="wrapper style2 spotlights">
+            <section>
+                <a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Who Are We</h2>
+                        <p>We are the Entrepreneurial Cell of VIT-AP University, a dynamic and driven student organization committed to nurturing the spirit of entrepreneurship on our campus. Our mission is to provide a platform for students to explore and develop their business ideas, connect with like-minded peers, and gain valuable skills and knowledge in the world of startups and innovation.</p>
+                        <ul class="actions">
+                            <li><a href="generic.html" class="button">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+                <div class="content">
+                    <div class="inner">
+                        <h2>Club Members</h2>
+                        <p>Welcome to our college's Entrepreneurial Cell! Our team consists of dynamic students from various disciplines, each bringing their unique talents and perspectives to the table. United by a shared passion for entrepreneurship, our members are dedicated to fostering innovation, collaboration, and growth within our campus community.</p>
+                        <ul class="actions">
+                            <li><a href="elements.html" class="button">Learn more</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
 
-		<!-- One -->
-		<section id="one" class="wrapper style2 spotlights">
-			<section>
-				<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Who Are We</h2>
-						<p>We are the Entrepreneurial Cell of VIT-AP University, a dynamic and driven student organization committed to nurturing the spirit of entrepreneurship on our campus. Our mission is to provide a platform for students to explore and develop their business ideas, connect with like-minded peers, and gain valuable skills and knowledge in the world of startups and innovation.</p>
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section>
-				<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Club Members</h2>
-						<p>Welcome to our college's Entrepreneurial Cell ! Our team consists of dynamic students from various disciplines, each bringing their unique talents and perspectives to the table. United by a shared passion for entrepreneurship, our members are dedicated to fostering innovation, collaboration, and growth within our campus community.</p>
-						<ul class="actions">
-							<li><a href="elements.html" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<!-- <section>
-				<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-				<div class="content">
-					<div class="inner">
-						<h2>Ultricies aliquam</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</div>
-			</section> -->
-		</section>
+        <!-- Two -->
+        <section id="two" class="wrapper style3 fade-up">
+            <div class="inner">
+                <h2>Our Upcoming Events</h2>
+                <p>Exciting events are on the horizon! From inspiring guest speakers to networking mixers and hands-on sessions, we’ve lined up a range of activities designed to spark creativity and drive success. Dive into our upcoming events and find opportunities to learn, connect, and grow with fellow members. Stay tuned and get ready to make the most of these fantastic opportunities!</p>
+                <div class="features">
+                    <section>
+                        <span class="icon solid major fa-desktop"></span>
+                        <h3>International Entrepreneurship Day Event</h3>
+                        <p>The Institution's Innovation Council (IIC) at VIT-AP and the Entrepreneurship Club proudly present an event to support new-age tech entrepreneurs. This initiative transforms innovative ideas into successful ventures. The Entrepreneurship Club enhances students' skills through workshops, fostering a strong entrepreneurial ecosystem at VIT-AP.</p>
+                    </section>
+                    <section>
+                        <span class="icon solid major fa-code"></span>
+                        <h3>Meet And Greet</h3>
+                        <p>Kick off your college journey with our Freshers Meet & Greet! Connect with new arrivals, meet seasoned members, and explore how our club can fuel your entrepreneurial dreams. Enjoy an evening of inspiration, networking, and opportunity!</p>
+                    </section>
+                    <section>
+                        <span class="icon solid major fa-link"></span>
+                        <h3>Monopoly</h3>
+                        <p>Join us for an exciting Monopoly event where players buy, trade, and build to win! Experience thrilling strategy, unexpected twists, and fierce competition. It’s a fun, dynamic challenge for all ages</p>
+                    </section>
+                </div>
+                <ul class="actions">
+                    <li><a href="generic.html" class="button">Learn more</a></li>
+                </ul>
+            </div>
+        </section>
 
-		<!-- Two -->
-		<section id="two" class="wrapper style3 fade-up">
-			<div class="inner">
-				<h2>Our Upcoming Events</h2>
-				<p>
-					Exciting events are on the horizon! From inspiring guest speakers to networking mixers and hands-on sessions, we’ve lined up a range of activities designed to spark creativity and drive success. Dive into our upcoming events and find opportunities to learn, connect, and grow with fellow members. Stay tuned and get ready to make the most of these fantastic opportunities!
-				</p>
-				<div class="features">
-					<section>
-						<span class="icon solid major fa-desktop"></span>
-						<h3>International Entrepreneurship Day Event</h3>
-						<p>
-							The Institution's Innovation Council (IIC) at VIT-AP and the Entrepreneurship Club proudly present an event to support new-age tech entrepreneurs. This initiative transforms innovative ideas into successful ventures. The Entrepreneurship Club enhances students' skills through workshops, fostering a strong entrepreneurial ecosystem at VIT-AP.
-						</p>
-					
-					</section> 
-					<section>
-						<span class="icon solid major fa-code"></span>
-						<h3>Meet And Greet</h3>
-						<p>Kick off your college journey with our Freshers Meet & Greet! Connect with new arrivals, meet seasoned members, and explore how our club can fuel your entrepreneurial dreams. Enjoy an evening of inspiration, networking, and opportunity!</p>
-					</section>
-					<!-- <section>
-						<span class="icon solid major fa-lock"></span>
-						<h3>Business Conclave</h3>
-						<p>An exceptional day dedicated to insightful discussions, networking, and idea exchange with industry leaders. Dive into a range of panels, keynotes, and workshops designed to inspire innovation and foster professional growth.Don’t miss this chance to elevate your professional journey!</p>
-					</section>
-					<section>
-						<span class="icon solid major fa-cog"></span>
-						<h3>CXO Round Table</h3>
-						<p>The CXO’s Round-Table is crafted to boost your business acumen through engaging, interactive learning and creative teamwork. Gain valuable feedback, expand your network, and build essential skills to excel professionally. Join us for a supportive and enriching experience to refine your expertise and confidently tackle future challenges..</p>
-					</section>
-					<section>
-						<span class="icon solid major fa-desktop"></span>
-						<h3>Startup Weekend</h3>
-						<p>Startup Weekend compresses the entrepreneurial journey into 54 action-packed hours. Participants pitch ideas, form teams, and refine concepts with expert mentorship. Through intense iteration, prototyping, and strategic planning, teams prepare for final pitches. Regardless of the outcome, the experience gained fosters confidence and sets the stage for successful startup ventures.</p>
-					</section> -->
-					<section>
-						<span class="icon solid major fa-link"></span>
-						<h3>Monopoly</h3>
-						<p>join us for an exciting Monopoly event where players buy, trade, and build to win! Experience thrilling strategy, unexpected twists, and fierce competition. It’s a fun, dynamic challenge for all ages</p>
-					</section>
-					<!-- <section>
-						<span class="icon major fa-gem"></span>
-						<h3>Aliquam urna dapibus</h3>
-						<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-					</section> -->
-				</div>
-				<ul class="actions">
-					<li><a href="generic.html" class="button">Learn more</a></li>
-				</ul>
-			</div>
-		</section>
+        <!-- Three -->
+        <section id="three" class="wrapper style1 fade-up">
+            <div class="inner">
+                <h2>Contact Us</h2>
+                <p>We're a vibrant community of entrepreneurs dedicated to fostering innovation and growth. Our mission is to support aspiring leaders through networking, workshops, and mentorship. Join us to turn your ideas into successful ventures!</p>
+                <div class="style1">
+                    <section>
+                        <form method="post" action="#">
+                            <ul class="contact">
+                                <li>
+                                    <h3>Address</h3>
+                                    <span>VIT-AP University, G-30, Inavolu,<br />
+                                    Beside AP Secretariat Amaravati,<br />
+                                    Andhra Pradesh,522237</span>
+                                </li>
+                                <li>
+                                    <h3>Email</h3>
+                                    <a href="mailto:entrepreneurship.club@vitap.ac.in">entrepreneurship.club@vitap.ac.in</a>
+                                </li>
+                            </ul>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
 
-		<!-- Three -->
-		<section id="three" class="wrapper style1 fade-up">
-			<div class="inner">
-				<h2>Contact Us</h2>
-				<p>
-					We're a vibrant community of entrepreneurs dedicated to fostering innovation and growth. Our mission is to support aspiring leaders through networking, workshops, and mentorship. Join us to turn your ideas into successful ventures!	
-				</p>
-				<div class="style1">
-					<section>
-						<form method="post" action="#">
-							<ul class="contact">
-								<li>
-									<h3>Address</h3>
-									<span>VIT-AP University, G-30, Inavolu,<br />
-										Beside AP Secretariat Amaravati,<br />
-										Andhra Pradesh,522237</span>
-								</li>
-								<li>
-									<h3>Email</h3>
-									<a href="mailto:entrepreneurship.club@vitap.ac.in">entrepreneurship.club@vitap.ac.in</a>
-								</li>
-								<li>
-									<!-- <h3>Phone</h3>
-									<span>(000) 000-0000</span> -->
-								</li>
-							</ul>
-						</form>
-					</section>
-				</div>
-			</div>
-		</section>
-	</div>
 <!-- Footer -->
 <footer id="footer" class="wrapper style1-alt">
     <div class="inner" style="text-align: center;">
