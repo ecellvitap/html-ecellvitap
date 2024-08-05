@@ -9,27 +9,9 @@
     
     <!-- Separate Style Sections -->
     <style>
-        #sidebar {
-            height: auto;
-            margin: auto;
-            align-items: auto;
-        }
-        #wrapper {
-            /* Your custom styles for #wrapper */
-        }
-        #intro {
-        }
-        #one {
-            /* Your custom styles for #one */
-        }
-        #two {
-            /* Your custom styles for #two */
-        }
+
         #three {
             border: none;
-        }
-        #footer {
-            /* Your custom styles for #footer */
         }
         #Options {
             font-weight: 900;
@@ -47,66 +29,47 @@
             border: none; /* Remove border */
         }
         
-        /* Responsive Styles */
-        @media (max-width: 1200px) {
-            #intro h1 {
-                font-size: 2.5em;
-            }
-            #intro p {
-                font-size: 1.2em;
-            }
-            #sidebar {
-                width: 100%;
-                margin: 0 auto;
-            }
-			#logo {
-                height: 150px;
-                width: 150px;
-            }
-        }
-        @media (max-width: 768px) {
-            #intro h1 {
-                font-size: 2em;
-            }
-            #intro p {
-                font-size: 1em;
-            }
-            #sidebar {
-                width: 100%;
-                margin: 0 auto;
-            }
-            #logo {
-                height: 150px;
-                width: 150px;
-            }
-            #Options li {
-                font-size: 1em;
-            }
-        }
-        @media (max-width: 480px) {
-            #intro h1 {
-                font-size: 1.5em;
-            }
-            #intro p {
-                font-size: 0.9em;
-            }
-            #logo {
-                height: 120px;
-                width: 120px;
-            }
-			#sidebar {
-                width: 100%;
-                margin: 0 auto;
-            }
-            #Options li {
-                font-size: 0.9em;
-            }
-        }
+        #sidebar {
+    width: 250px; /* Set a width for the sidebar */
+    height: auto;
+    margin: 0 auto; /* Center the sidebar horizontally */
+    align-items: center;
+    display: inline-flex; /* Use Flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    background-color: #312450; /* Add a background color for visibility */
+    padding: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1280px) {
+    #sidebar {
+        width: 100%; /* Make the sidebar full width on mobile */
+        padding: 10px; 
+        /* Adjust padding for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%; /* Make the sidebar full width on mobile */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    #sidebar {
+        width: 100%; /* Ensure full width on very small screens */
+        padding: 5px; /* Further adjust padding */
+    }
+}
 		
     </style>
 </head>
+
+
 <body class="is-preload">
     <!-- Sidebar -->
+
     <section id="sidebar">
         <div class="inner">
             <nav>
@@ -123,11 +86,12 @@
         </div>
     </section>
 
+
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Intro -->
         <section id="intro" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
+            <div class="inner1">
                 <h1>Entrepreneurship Club</h1>
                 <p>Welcome! We are the ones who ought to create a wave of entrepreneurship at VIT. Together, we strive to reach remarkable heights by focusing on continuous learning and embodying the essential traits of successful entrepreneurs.</p>
                 <ul class="actions">
